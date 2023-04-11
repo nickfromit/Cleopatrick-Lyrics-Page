@@ -1,0 +1,362 @@
+
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html {
+	/* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+	font-family:
+		system-ui,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+	line-height: 1.15; /* 1. Correct the line height in all browsers. */
+	-webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+	-moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+	tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+
+body {
+	margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+	height: 0; /* 1 */
+	color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+	text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+	font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+	font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+	text-indent: 0; /* 1 */
+	border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+	text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+	padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+	display: list-item;
+}
+/* #endregion */
+
+*{font-family: 'Architects Daughter', cursive;
+	scroll-behavior: smooth;scroll-padding-top:20px}
+body{display:flex;flex-direction: row;}
+nav{border:1px grey solid;overflow:auto;position:fixed;display:flex;flex-direction:column;height: 100vh;width: 19vw;border-top: none;}
+span a{font-style: italic;font-weight: 100;font-size:0.7em;color:blueviolet}
+a{text-decoration: none;color: black;}
+.nav-link{border-top:1px grey solid;padding: 2.44vh;font-weight: bold;}
+.nav-link:last-child{border-bottom: none;}
+h1{padding:1.05vh 1vw 0 1vw;}
+main{position:relative;left:19vw;height: 100vh;width:81vw;padding-left: 1vw;overflow-x: hidden;}
+.main-section{padding-left: 4vw;border-bottom:1px grey solid;width:79vw;}
+p,.lyrics{color: aliceblue;text-shadow: 1px 1px 2px black;}
+
+/*#region*/
+#Hometown {background-image: url(images/Hometown.jpg);background-size:1600px;background-repeat: no-repeat;background-position-x: -12px;background-position-y: 8px}
+#Youth {background-image: url(images/Youth.jpg);background-size:1600px;background-repeat: no-repeat;background-position-x: -12px;background-position-y: 8px;}
+#Daphne_did_it {background-image: url(images/Daphne_did_it.jpg);background-size:1600px;background-repeat: no-repeat;background-position-x: -12px;background-position-y: 8px;}
+[id='2008'] {background-image: url(images/2008.jpg);background-size:1200px;background-repeat: no-repeat;background-position-x: 20px;background-position-y: 43px;}
+#Bernard_Trigger {background-image: url(images/Bernard_Trigger.jpg);background-size:1600px;background-repeat: no-repeat;background-position-x: -12px;background-position-y: 8px;}
+#The_Depths {background-image: url(images/The_Depths.jpg);background-size:1600px;background-repeat: no-repeat;background-position-x: -12px;background-position-y:  8px;}
+#Sanjake {background-image: url(images/Sanjake.jpg);background-size:1200px;background-repeat: no-repeat;background-position-x: 20px;background-position-y:  43px;}
+#Family_Van {background-image: url(images/Family_Van.jpg);background-size:1200px;background-repeat: no-repeat;background-position-x: 20px;background-position-y:  43px;}
+#Good_Grief {background-image: url(images/Good_Grief.jpg);background-size:1200px;background-repeat: no-repeat;background-position-x: 20px;background-position-y:  43px;}
+#The_Drake {background-image: url(images/The_Drake.jpg);background-size:1200px;background-repeat: no-repeat;background-position-x: 20px;background-position-y:  43px;}
+/*#endregion*/
+/*#region*/
+#show1:target #p1 {display: block;}
+#show1:target #show1{display:none;}
+#p1{display: none;}
+
+#show2:target #p2 {display: block;}
+#show2:target #show2{display:none;}
+#p2{display: none;}
+
+#show3:target #p3 {display: block;}
+#show3:target #show3{display:none;}
+#p3{display: none;}
+
+#show4:target #p4 {display: block;}
+#show4:target #show4{display:none;}
+#p4{display: none;}
+
+#show5:target #p5 {display: block;}
+#show5:target #show5{display:none;}
+#p5{display: none;}
+
+#show6:target #p6 {display: block;}
+#show6:target #show6{display:none;}
+#p6{display: none;}
+
+#show7:target #p7 {display: block;}
+#show7:target #show7{display:none;}
+#p7{display: none;}
+
+#show8:target #p8 {display: block;}
+#show8:target #show8{display:none;}
+#p8{display: none;}
+
+#show9:target #p9 {display: block;}
+#show9:target #show9{display:none;}
+#p9{display: none;}
+
+#show10:target #p10 {display: block;}
+#show10:target #show10{display:none;}
+#p10{display: none;}
+/*#endregion*/
+
+@media (max-width:768px){
+body{display: flex;flex-direction: column;}
+nav{position: relative;width: 90vw;height: 33.5vh;margin-left: 3.5vw;}
+main{position:static;top: 50vh;height:100%;;width:94vw}
+.main-section{padding-left: 0;width:100vw}
+h2,.lyrics{padding-left: 20px;}
+
+#Hometown{background-position-x: -20px;background-position-y: 1vh;}
+#Youth{background-position-x: -20px;background-position-y: 1vh;}
+#Daphne_did_it{background-position-x: -20px;background-position-y: 1vh;}
+[id="2008"]{background-position-x: 12px;background-position-y: 40px;}
+#Bernard_Trigger{background-position-x: -20px;background-position-y: 1vh;}
+#The_Depths{background-position-x: -20px;background-position-y: 1vh;}
+#Sanjake{background-position-x: 12px;background-position-y: 40px;}
+#Family_Van{background-position-x: 12px;background-position-y: 40px;}
+#Good_Grief{background-position-x: 12px;background-position-y: 40px;}
+#The_Drake{background-position-x: 12px;background-position-y: 40px;}
+}
